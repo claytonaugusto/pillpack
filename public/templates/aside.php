@@ -1,8 +1,8 @@
-<aside class="flex h-screen flex-wrap w-3xs justify-center content-around p-1.5 border-1 border-(--border-platinum)">
+<aside class="flex h-screen flex-wrap w-3xs justify-center content-around p-1 border border-t-0 border-b-0 border-r-(--border-platinum) bg-(--bg-baby-powder)">
             <!-- users avatar -->
-            <div class="flex flex-col items-center justify-center p-2 mt-5 w-full">
+            <div class="flex flex-col items-center justify-center w-full">
                 <p class=" mb-2">Seja bem-vindo(a)!</p>
-                <img class="mb-5" src="assets/images/avatar.png" alt="avatar" srcset="">
+                <img class="mb-2 rounded-full" src="https://placehold.co/140/png" alt="avatar" srcset="">
                 <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                 <h3 class="text-sm italic">Farmacêutico</h3>
             </div>
