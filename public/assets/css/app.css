@@ -78,3 +78,22 @@ textarea::placeholder{
     text-decoration: none;
     cursor: pointer;
   } 
+  table{
+    width: 100%;
+  }
+  table, th, td {
+    border: 1px solid var(--border-platinum);
+    border-collapse: collapse;
+    padding: 5px 0;
+  }
+  tr{
+    /* display: flex; */
+    font-size: 11px;
+    text-align: center;
+  }
+  tr:nth-child(even) {
+    background-color: var(--border-platinum);
+  }
+  th{
+    margin: 0;
+  }

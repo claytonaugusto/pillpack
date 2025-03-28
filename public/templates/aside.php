@@ -11,11 +11,11 @@
                 <ul class="list-inside w-full">
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-user-group"></i>Usuários</a>
+                        <a href="usuarios-cadastrados.php" class="block p-1.5"><i class="fa-solid fa-user-group"></i>Usuários</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-heart-circle-check"></i>Dados vitais</a>
+                        <a href="dados-vitais.php" class="block p-1.5"><i class="fa-solid fa-heart-circle-check"></i>Dados vitais</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
