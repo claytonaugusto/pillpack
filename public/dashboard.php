@@ -23,12 +23,12 @@
                     </div>
             </a>
 
-            <a href="clientes-totais.php">
+            <!-- <a href="clientes-totais.php">
                 <div class="flex flex-col items-center justify-center w-74 h-36 bg-(--bg-yellow-avanti) rounded-lg cursor-pointer text-(--text-prussian-blue) hover:text-(--bg-seasalt) hover:bg-(--bg-btn-hover) duration-300">
                     <h2 class="text-xl font-bold mb-2">Clientes totais</h2>
                     <h2 class="text-4xl font-bold mb-2">60</h2>
                 </div>
-            </a>
+            </a> -->
 
             <a href="clientes-uso-continuo.php">
                 <div class="flex flex-col items-center justify-center w-74 h-36 bg-(--bg-yellow-avanti) rounded-lg cursor-pointer text-(--text-prussian-blue) hover:text-(--bg-seasalt) hover:bg-(--bg-btn-hover) duration-300">

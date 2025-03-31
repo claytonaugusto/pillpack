@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-user"></i>Pacientes</a>
+                        <a href="" class="block p-1.5"><i class="fa-solid fa-user"></i>Clientes</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
