@@ -16,9 +16,12 @@
             <!-- dashboard cadastro de usuários -->
             <div class="flex flex-wrap justify-start gap-1 w-full">
 
-                <div class="flex flex-col w-full h-screen">
+                <div class="flex flex-col w-full">
 
-                    <?php include __DIR__ . "/templates/search.php"; ?>
+                    <div class="w-full flex items-start justify-between mb-2.5 p-0">
+                        <?php include __DIR__ . "/templates/search.php"; ?>
+                        <?php include __DIR__ . "/templates/filter.php"; ?>
+                    </div>
 
                     <div class="w-full mt-2.5">
                         <canvas id="myChart"></canvas>

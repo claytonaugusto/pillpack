@@ -15,7 +15,7 @@
         <div class="flex flex-col w-lg m-auto items-center justify-center bg-(--bg-baby-powder) p-2 rounded-lg">
             <img class="flex items-center justify-center max-w-70 mb-5" src="assets/images/logotipo-avanti-pill-pack.png" alt="Pill Pack">
 
-            <form class="flex w-full flex-col justify-center items-center flex-wrap" action="#" method="post">
+            <form class="flex w-full flex-col justify-center items-center flex-wrap" action="dashboard.php" method="post">
                 <input class="w-full max-w-100 rounded-lg bg-seasalt  size-12 p-5 mb-5 border-1 border-(--border-platinum) text-onyx" type="text" name="" id="" placeholder="Nome">
                 <input class="w-full max-w-100 rounded-lg bg-seasalt size-12 p-5 mb-5 border-1 border-(--border-platinum) text-onyx" type="password" name="" id="" placeholder="Senha">
                 <input class="bg-(--bg-btn) hover:bg-(--bg-btn-hover) duration-500 text-stone-50 border-(--border-platinum) w-full max-w-100 rounded-lg p-3 cursor-pointer font-bold mb-5" type="submit" value="Entrar">

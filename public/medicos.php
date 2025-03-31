@@ -11,14 +11,21 @@
             <!-- mapa de páginas e botão de cadastro -->
             <div class="flex justify-between items-center h-21 w-full mb-5">
                 <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Médicos</a></h2>
+                <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
+                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar médico</a>
+                </button>
+
             </div>
 
             <!-- dashboard cadastro de usuários -->
             <div class="flex flex-wrap justify-start gap-1 w-full">
 
-                <div class="flex flex-col w-full h-screen">
+                <div class="flex flex-col w-full">
 
-                    <?php include __DIR__ . "/templates/search.php"; ?>
+                    <div class="w-full flex items-start justify-between mb-2.5 p-0">
+                        <?php include __DIR__ . "/templates/search.php"; ?>
+                        <?php include __DIR__ . "/templates/filter.php"; ?>
+                    </div>
 
                     <div class="w-full mt-2.5">
                         <table>

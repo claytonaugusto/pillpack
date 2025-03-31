@@ -2,7 +2,7 @@
             <!-- users avatar -->
             <div class="flex flex-col items-center justify-center w-full">
                 <p class=" mb-2">Seja bem-vindo(a)!</p>
-                <img class="mb-2 rounded-full" src="https://placehold.co/140/png" alt="avatar" srcset="">
+                <img class="mb-2 rounded-full" src="https://placehold.co/100/png" alt="avatar" srcset="">
                 <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                 <h3 class="text-sm italic">Farmacêutico</h3>
             </div>

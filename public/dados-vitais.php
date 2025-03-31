@@ -16,8 +16,12 @@
             <!-- dashboard cadastro de usuários -->
             <div class="flex flex-wrap justify-start gap-1 w-full">
 
-                <div class="flex flex-col w-full h-screen">
-                <?php include __DIR__."/templates/search.php"; ?>
+                <div class="flex flex-col w-full">
+
+                    <div class="w-full flex items-start justify-between mb-2.5 p-0">
+                        <?php include __DIR__ . "/templates/search.php"; ?>
+                        <?php include __DIR__ . "/templates/filter.php"; ?>
+                    </div>
 
                     <div class="w-full mt-2.5">
                         <table>
@@ -73,7 +77,7 @@
                                 <td>Apenas um teste</td>
                                 <td>Finalizado</td>
                             </tr>
-                            
+
                             <tr>
                                 <td>Fulano de tal</td>
                                 <td>28/03/25</td>
@@ -91,7 +95,7 @@
                                 <td>Apenas um teste</td>
                                 <td>Finalizado</td>
                             </tr>
-                            
+
                             <tr>
                                 <td>Fulano de tal</td>
                                 <td>28/03/25</td>

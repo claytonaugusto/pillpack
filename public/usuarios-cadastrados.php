@@ -17,11 +17,11 @@
             </div>
 
             <!-- dashboard usuarios cadastrados -->
-            <div class="flex flex-wrap justify-start gap-1">
+            <div class="flex flex-wrap justify-start gap-1.5">
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -30,8 +30,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -40,8 +40,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -50,8 +50,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -60,8 +60,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -70,8 +70,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
@@ -80,8 +80,8 @@
                 </a>
 
                 <a href="#" title="Nome do usuário cadastrado no sistema">
-                    <div class="flex flex-col items-center justify-center w-60 h-60 p-3 rounded-lg shadow-xl">
-                        <img class="mb-5 mt-2" src="assets/images/avatar-use.png" alt="Nome do usuário" srcset="">
+                    <div class="flex flex-col items-center justify-center w-52 h-min p-1 rounded-lg shadow-xl bg-(--bg-baby-powder)">
+                        <img class="mb-5 mt-2 rounded-full" src="https://placehold.co/100/png" alt="Nome do usuário" srcset="">
                         <h2 class="text-lg font-bold">Saulo Laranjeiras</h2>
                         <h3 class="text-sm italic">Farmacêutico</h3>
                         <p class="text-(--text-color) mb-2">Status: Ativo</p>
