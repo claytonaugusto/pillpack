@@ -35,11 +35,11 @@
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-user-doctor"></i>Médicos</a>
+                        <a href="medicos.php" class="block p-1.5"><i class="fa-solid fa-user-doctor"></i>Médicos</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-stethoscope"></i>Especialidades</a>
+                        <a href="especialidades.php" class="block p-1.5"><i class="fa-solid fa-stethoscope"></i>Especialidades</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
