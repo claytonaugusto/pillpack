@@ -15,6 +15,8 @@
 --text-onyx: #464545;
 --text-teste: #060;
 --border-platinum: #E5E5E5;
+--text-error: #c1121f;
+--text-whatsapp: #59a52c;
 }
 .fa-solid{
     margin-right: 10px;
@@ -97,3 +99,16 @@ textarea::placeholder{
   th{
     margin: 0;
   }
+  td a{
+    color: var(--text-whatsapp);
+  }
+  td a .fa-pen{
+    color: var(--bg-blue-green-hover);
+  }
+  td a .fa-trash{
+    color: var(--text-error);
+  }
+.error{
+    color: var(--text-error);
+  }
+  

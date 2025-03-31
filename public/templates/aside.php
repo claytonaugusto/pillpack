@@ -1,4 +1,4 @@
-<aside class="flex h-screen flex-wrap w-3xs justify-center content-around p-1 border border-t-0 border-b-0 border-r-(--border-platinum) bg-(--bg-baby-powder)">
+<aside id="mySidebar" class="flex h-screen flex-wrap w-3xs justify-center content-around p-1 border border-t-0 border-b-0 border-r-(--border-platinum) bg-(--bg-baby-powder) collapsed">
             <!-- users avatar -->
             <div class="flex flex-col items-center justify-center w-full">
                 <p class=" mb-2">Seja bem-vindo(a)!</p>

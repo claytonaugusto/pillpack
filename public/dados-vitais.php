@@ -17,9 +17,7 @@
             <div class="flex flex-wrap justify-start gap-1 w-full">
 
                 <div class="flex flex-col w-full h-screen">
-                    <form action="" method="get">
-                        <input class="w-md bg-(--bg-baby-powder) border-1 border-(--border-platinum) rounded-lg h-12 p-2 search" type="search" name="" id="" placeholder="Pesquisar...">
-                    </form>
+                <?php include __DIR__."/templates/search.php"; ?>
 
                     <div class="w-full mt-2.5">
                         <table>
