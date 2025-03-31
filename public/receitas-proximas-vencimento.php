@@ -18,7 +18,10 @@
 
                 <div class="flex flex-col w-full h-screen">
 
-                    <?php include __DIR__ . "/templates/search.php"; ?>
+                    <div class="w-full flex flex-wrap items-start justify-between mb-2.5 p-0">
+                        <?php include __DIR__ . "/templates/search.php"; ?>
+                        <?php include __DIR__ . "/templates/filter.php"; ?>
+                    </div>
 
                     <div class="w-full mt-2.5">
                         <table>

@@ -18,7 +18,7 @@
 
                 <div class="flex flex-col w-full">
 
-                    <div class="w-full flex items-start justify-between mb-2.5 p-0">
+                    <div class="w-full flex flex-wrap items-start justify-between mb-2.5 p-0">
                         <?php include __DIR__ . "/templates/search.php"; ?>
                         <?php include __DIR__ . "/templates/filter.php"; ?>
                     </div>

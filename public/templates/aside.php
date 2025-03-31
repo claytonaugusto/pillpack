@@ -18,12 +18,12 @@
                         <a href="dados-vitais.php" class="block p-1.5"><i class="fa-solid fa-heart-circle-check"></i>Dados vitais</a>
                     </li>
 
-                    <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-pills"></i>SDM</a>
+                    <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) text-red-800 hover:text-sky-50 duration-300">
+                        <a href="" class="block p-1.5"><i class="fa-solid fa-pills"></i>SDM (sem dados)</a>
                     </li>
 
-                    <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-pen-to-square"></i>Estoque</a>
+                    <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) text-red-800 hover:text-sky-50 duration-300">
+                        <a href="" class="block p-1.5"><i class="fa-solid fa-pen-to-square"></i>Estoque (sem dados)</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
