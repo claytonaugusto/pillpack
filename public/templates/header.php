@@ -8,4 +8,5 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <title>Dashboard | Pill Pack Sistema de etiquetas</title>
     <script src="../assets/js/api-cep.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>

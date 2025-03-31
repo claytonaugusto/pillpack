@@ -27,11 +27,11 @@
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-user"></i>Clientes</a>
+                        <a href="clientes-totais.php" class="block p-1.5"><i class="fa-solid fa-user"></i>Clientes</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-chart-line"></i>Vendas</a>
+                        <a href="vendas.php" class="block p-1.5"><i class="fa-solid fa-chart-line"></i>Vendas</a>
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
