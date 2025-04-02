@@ -11,6 +11,10 @@
                 <ul class="list-inside w-full">
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
+                        <a href="dashboard.php" class="block p-1.5"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+
+                    <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
                         <a href="usuarios-cadastrados.php" class="block p-1.5"><i class="fa-solid fa-user-group"></i>Usuários</a>
                     </li>
 
