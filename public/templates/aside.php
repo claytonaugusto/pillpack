@@ -47,7 +47,7 @@
                     </li>
 
                     <li class="flex-wrap mb-2 hover:bg-(--bg-btn-hover) hover:text-sky-50 duration-300">
-                        <a href="" class="block p-1.5"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                        <a href="index.php" class="block p-1.5"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
                     </li>
 
 
