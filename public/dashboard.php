@@ -1,4 +1,7 @@
-<?php include __DIR__ . "/templates/header.php"; ?>
+<?php
+include __DIR__ . "/templates/header.php";
+include __DIR__ . "/config/connection.php";
+?>
 
 <body>
     <!-- Main -->

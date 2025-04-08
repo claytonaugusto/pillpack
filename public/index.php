@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+        require __DIR__."/config/connection.php";
+    ;?>
 
 <head>
     <meta charset="UTF-8">

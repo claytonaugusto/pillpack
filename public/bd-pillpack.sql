@@ -38,13 +38,15 @@ DROP TABLE IF EXISTS `patienst`;
 
 CREATE TABLE `patienst` (
   `idpatienst` INT NOT NULL AUTO_INCREMENT,
-  `patienst_name` varchar(50) DEFAULT NULL,
-  `patienst_phone` INT(15) DEFAULT NULL,
-  `patienst_email` VARCHAR(100) DEFAULT NULL,
-  `patienst_date_of_birth` DATE DEFAULT NULL,
-  `patienst_rg` VARCHAR(20) DEFAULT NULL,
-  `patienst_cpf` VARCHAR(15) DEFAULT NULL,
-  `patienst_status` INT(2) DEFAULT NULL,
+  `patienst_name` varchar(50) NOT NULL,
+  `patienst_phone` INT(15) NOT NULL,
+  `patienst_email` VARCHAR(100) NOT NULL,
+  `patienst_date_of_birth` DATE NOT NULL,
+  `patienst_rg` VARCHAR(20) NOT NULL,
+  `patienst_cpf` VARCHAR(15) NOT NULL,
+  `patienst_status` VARCHAR(20) NOT NULL,
+  `patienst_date_entry_system` DATE NOT NULL,
+  `patienst_sex` ENUM('m','f') NOT NULL,
   PRIMARY KEY (`idpatienst`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 

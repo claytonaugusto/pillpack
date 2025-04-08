@@ -1,4 +1,17 @@
-<?php include __DIR__ . "/templates/header.php"; ?>
+<?php
+include __DIR__ . "/templates/header.php";
+include __DIR__ . "/config/connection.php";
+$sql = "SELECT 
+              patienst_name,
+              patienst_phone,
+              patienst_email,
+              patienst_date_of_birth,
+              patienst_status
+         FROM patienst";
+$statement = $pdo->query($sql);
+$members = $statement->fetchAll();
+
+?>
 
 <body>
     <!-- Main -->
@@ -38,105 +51,20 @@
                                 <th>Status</th>
                                 <th>Editar</th>
                             </tr>
+                            <?php foreach($members as $member){?>
+                                
                             <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
+                                <td><?= $member['patienst_name']?></td>
+                                <td><?= $member['patienst_email']?></td>
                                 <td>30/03/2025</td>
                                 <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
+                                <td><a href="https://wa.me/55<?= $member['patienst_phone']?>" target="_blank"><?= $member['patienst_phone']?></a></td>
+                                <td><?= $member['patienst_status']?></td>
                                 <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
 
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
                             </tr>
+                           <?php };?>
 
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>30/03/2025</td>
-                                <td>Usuário</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td>Ativo</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
 
                             </tr>
                         </table>

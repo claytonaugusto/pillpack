@@ -1,5 +1,11 @@
-<?php include __DIR__ . "/templates/header.php"; ?>
+<?php
+include __DIR__ . "/templates/header.php";
+include __DIR__ . "/config/connection.php";
 
+$sql = "SELECT * FROM doctors";
+$statement = $pdo->query($sql);
+$members = $statement->fetchAll();
+?>
 <body>
     <!-- Main -->
     <main class="flex w-full h-screen justify-between gap-4 text-(--text-onyx)">
@@ -37,51 +43,19 @@
                                 <th>Telefone</th>
                                 <th>Editar</th>
                             </tr>
+                            <?php 
+                                foreach($members as $member)
+                                {?>
+                                    
                             <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>Geriátra</td>
-                                <td>30/03/2025</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
+                                <td><?= $member['doctors_name'];?></td>
+                                <td><?= $member['doctors_email'];?></td>
+                                <td><?= $member['doctors_specialty'];?></td>
+                                <td><?= $member['doctors_resgistration_date'];?></td>
+                                <td><a href="https://wa.me/55<?= $member['doctors_phone'];?>" target="_blank"><?= $member['doctors_phone'];?></a></td>
                                 <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
                             </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>Geriátra</td>
-                                <td>30/03/2025</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>Geriátra</td>
-                                <td>30/03/2025</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>Geriátra</td>
-                                <td>30/03/2025</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Fulano de tal ciclano beltrano</td>
-                                <td>fulanodetal@seuemail.com.br</td>
-                                <td>Geriátra</td>
-                                <td>30/03/2025</td>
-                                <td><a href="https://wa.me/5531992165055" target="_blank">(37) 99999-9999</a></td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
+                                <?php };?>
                             </tr>
                         </table>
                         <?php include __DIR__ . "/templates/pagination.php"; ?>

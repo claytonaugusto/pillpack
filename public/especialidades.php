@@ -1,4 +1,11 @@
-<?php include __DIR__ . "/templates/header.php"; ?>
+<?php
+include __DIR__ . "/templates/header.php";
+include __DIR__ . "/config/connection.php";
+
+$sql = "SELECT * FROM specialties";
+$statement = $pdo->query($sql);
+$members = $statement->fetchAll();
+?>
 
 <body>
     <!-- Main -->
@@ -34,36 +41,14 @@
                                 <th>Data de cadastro</th>
                                 <th>Editar</th>
                             </tr>
+                            <?php
+                               foreach($members as $member){;?>
                             <tr>
-                                <td>Clínica Geral</td>
-                                <td>30/03/2025</td>
+                                <td><?= $member['specialties_name'];?></td>
+                                <td><?= $member['specialties_registration_date'];?></td>
                                 <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
                             </tr>
-
-                            <tr>
-                                <td>Clínica Geral</td>
-                                <td>30/03/2025</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Clínica Geral</td>
-                                <td>30/03/2025</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Clínica Geral</td>
-                                <td>30/03/2025</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>Clínica Geral</td>
-                                <td>30/03/2025</td>
-                                <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
-                            </tr>
-
+                            <?php };?>
                             </tr>
                         </table>
                         <?php include __DIR__ . "/templates/pagination.php"; ?>
