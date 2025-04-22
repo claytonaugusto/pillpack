@@ -1,11 +1,11 @@
 <?php
-$type= 'mysql';
+$type= 'mysql'; //
 $host= 'localhost';
-$dbname = 'pillpack';
+$dbname = 'pillpack'; // ag29com_pillpack
 $port='3306';
 
-$password = '2004231010';
-$user = 'root';
+$password = '2004231010'; // muranga@2013
+$user = 'root'; //ag29com_clayton
 
 $options=[
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

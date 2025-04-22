@@ -19,7 +19,7 @@ $members = $statement->fetchAll();
             <div class="flex justify-between items-center h-21 w-full mb-5">
                 <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Especialidades</a></h2>
                 <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
-                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar especialidade</a>
+                    <a href="cadastro-especialidades.php" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar especialidade</a>
                 </button>
 
             </div>

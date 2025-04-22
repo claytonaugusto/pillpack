@@ -18,7 +18,7 @@ $members = $statement->fetchAll();
             <div class="flex justify-between items-center h-21 w-full mb-5">
                 <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Médicos</a></h2>
                 <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
-                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar médico</a>
+                    <a href="cadastro-medicos.php" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar médico</a>
                 </button>
 
             </div>
@@ -40,7 +40,8 @@ $members = $statement->fetchAll();
                                 <th>E-mail</th>
                                 <th>Especialidade</th>
                                 <th>Data de cadastro</th>
-                                <th>Telefone</th>
+                                <th>Telefone 1</th>
+                                <th>Telefone 2</th>
                                 <th>Editar</th>
                             </tr>
                             <?php 
@@ -52,6 +53,7 @@ $members = $statement->fetchAll();
                                 <td><?= $member['doctors_email'];?></td>
                                 <td><?= $member['doctors_specialty'];?></td>
                                 <td><?= $member['doctors_resgistration_date'];?></td>
+                                <td><a href="https://wa.me/55<?= $member['doctors_phone'];?>" target="_blank"><?= $member['doctors_phone'];?></a></td>
                                 <td><a href="https://wa.me/55<?= $member['doctors_phone'];?>" target="_blank"><?= $member['doctors_phone'];?></a></td>
                                 <td><a href="#"><i class="fa-solid fa-pen"></i></a><a href=""><i class="fa-solid fa-trash"></i></a></td>
                             </tr>

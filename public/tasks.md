@@ -1,21 +1,48 @@
 ## Tasks a serem desenvolvidas Pill Pack
-- [x] - Página de novos clientes com retorno em uma tabela com os dados principais:
-    - [x] Nome, email, data do cadastro, nível do usuário, status, whatsapp, observações e editar/excluir.
-    
-- [x] - Página de clientes de uso contínuo:
-    - [x] Nome, data do cadastro, medicamentos e editar/excluir.
-    
-- [x] - Página de receitas próximas ao vencimento:
-    - [x] Nome do paciente, data de vencimento, medicamento, whatsapp e editar/excluir.
-    
-- [x] - Página de farmácias:
-    - [x] Nome da farmácia, apelido, cidade, bairro, telefones e editar/excluir.
-    
-- [x] - Paginação configurada.
-- [x] - Alteração do menu Pacientes para Clientes
-
-- [] - Página de médicos:
-    - [] Nome, especialidade, crf/crm, data do cadastro e editar/excluir.
-    
-- [] - Página de especialidades:
-    - [] Nome e editar/excluir.
+- [ ] Inserir campo com o número do conselho na tela de médicos
+- [ ] Recebimento de receitas
+	- [ ] Cadastro da receita
+	- [ ] Medicamento / Dosagem / Posologia
+	ex: um comprimido do medicamento A durante 10 dias
+		  um comprimido do medicamento B durante 10 dias
+		  um comprimido do medicamento B durante 20 dias
+ - [ ] Campo de limitação de dias, o padrão é 30 dias, dentro dessa limitação colocar a opção de:
+	 - [ ] Dias corridos
+	 - [ ] Dias alternados
+	 - [ ] Dias úteis
+- [ ] Entrada de medicamentos externos tragos pelo cliente para serem inseridos na Drug Box
+	- [ ] Inserir opção na tela de cadastro de receitas com todos os campos impressos que tem no blister:
+	- [ ] Data de validade
+	- [ ] Lote
+	- [ ] Laboratório
+	- [ ] Origem do medicamento (farmácia)
+- [ ] Gerar um número de cadastro e de ordem de serviços
+- [ ] Reimpressão de ordem de serviços e etiquetas
+	- [ ] Inserir na ordem de serviço campo com valor total
+	- [ ] Número do cupom fiscal
+	- [ ] Forma de pagamento
+	- [ ] Se foi pago ou crediário 
+- [ ] Duplicar ordem de serviço:
+	- [ ] Trazer todos os dados do paciente
+	- [ ] Os medicamentos
+	- [ ] Campo para excluir medicamentos
+	- [ ] Campo para inserir medicamentos
+	- [ ] Gerar uma nova ordem de serviço com um novo número
+- [ ] Etiqueta do saquinho precisa de um campo de observação
+- [ ] Etiqueta externa da caixa precisa dos seguintes dados:
+	- [ ] Dados do cliente
+	- [ ] Dados do médico
+	- [ ] Ordem de serviço (vide mapa mental entregue pela Angela)
+- [ ] Inserir campo de medicamento especial no cadastro de produtos
+- [ ] Gerar número único para cada cliente
+- [ ] Estoque:
+	- [ ] Estoque de insumos (caixas, etiquetas)
+	- [ ] Estoque reserva de medicamentos do paciente (medicamentos que ficarão armazenados na farmácia)
+	- [ ] Tela de entrada de insumos com baixa automática no estoque
+- [ ] Relatórios:
+	- [ ] Vendas por pacientes
+	- [ ] Vendas por período
+	- [ ] Vendas por farmácia
+	- [ ] Vendas por funcionário
+- [ ] Log do sistema
+- [ ] Rastreio de usuários

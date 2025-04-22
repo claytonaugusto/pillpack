@@ -13,9 +13,9 @@ include __DIR__ . "/config/connection.php";
 
             <!-- mapa de páginas e botão de cadastro -->
             <div class="flex justify-between items-center h-21 w-full mb-5">
-                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Cadastro de usuários</a></h2>
+                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Cadastro de clientes</a></h2>
                 <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
-                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar usuário</a>
+                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar cliente</a>
                 </button>
             </div>
 
@@ -25,16 +25,7 @@ include __DIR__ . "/config/connection.php";
                 <div class="flex flex-col justify-center w-full">
                     <form method="post" action="cadastro.php" class="flex flex-wrap">
 
-                        <?php include __DIR__ ."/templates/modal.php"; ?>
-
-                        <div class="flex items-center mb-1.5 w-full text-center">
-                            <!-- Avatar da página de cadastro de usuários -->
-                            <img class="mt-1 mb-1 rounded-full ml-1.5" src="https://placehold.co/100/png " alt="Avatar do usuário" title="Avatar do usuário" srcset="" />
-                            <div class="flex items-center justify-center content-center -m-6 z-3 ">
-                                <a href="#" id="myBtn" title="Alterar avatar do usuário" class="text-(--text-onyx)block"><i class="fa-solid fa-pen p-2 bg-(--bg-baby-powder) border-2 border-(--bg-btn) rounded-full"></i></a>
-                            </div>
-                            </img>
-                        </div>
+                        <?php include __DIR__ . "/templates/modal.php"; ?>
 
                         <input class="size-full" type="text" name="users_name" id="" title="Digite seu nome completo" placeholder="Nome completo">
                         <input class="size-full" type="email" name="" id="" title="Digite seu e-mail" placeholder="E-mail">
@@ -63,18 +54,11 @@ include __DIR__ . "/config/connection.php";
                             </select>
                             <input class="w-[49%]" type="text" name="" id="" placeholder="CPF">
                             <input class="w-[49%]" type="text" name="" id="" placeholder="RG ">
-                            <select class="w-[49%]" name="" id="">
-                                <option value="">Nível do usuário</option>
-                                <option value="">Administrador</option>
-                                <option value="">Farmacêutico</option>
-                                <option value="">Vendedor</option>
-                                <option value="">Usuário</option>
-                            </select>
                             <input class="w-[49%]" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
                                 onblur="pesquisacep(this.value);" placeholder="CEP apenas números" />
+                            <input class="w-[49%]" type="text" name="cidade" id="cidade" placeholder="Cidade">
                             <input class="size-full" type="text" name="rua" id="rua" placeholder="Endereço">
                             <input class="w-[49%]" type="text" name="bairro" id="bairro" placeholder="Bairro">
-                            <input class="w-[49%]" type="text" name="cidade" id="cidade" placeholder="Cidade">
                             <input class="w-[49%]" type="text" name="" id="" placeholder="Complemento">
                             <input class="w-[49%]" type="text" name="uf" id="uf" placeholder="Estado">
                             <textarea class="size-full" name="" id="" placeholder="Observações"></textarea>
