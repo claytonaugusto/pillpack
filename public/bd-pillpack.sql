@@ -3,77 +3,79 @@ CREATE DATABASE  IF NOT EXISTS `pillpack`;
 USE `pillpack`;
 
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users` (
-  `idusers` INT NOT NULL AUTO_INCREMENT,
-  `users_name` varchar(50) NOT NULL,
-  `users_email` varchar(100) NOT NULL,
-  `users_password` varchar(100) NOT NULL,
-  `users_phone` INT(15),
-  `users_cpf` VARCHAR(15) not NULL,
-  `users_rg` varchar(20),
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `user_id` INT NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(50) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
+  `user_date_register` date NOT NULL,
+  `user_date_of_birth` date NOT NULL,
+  `user_password` varchar(100) NOT NULL,
+  `user_phone_one` INT(15),
+  `user_phone_two` INT(15),
+  `user_sex` enum('m','f'),
   `user_status` INT(2) NOT NULL,
-  `permission` VARCHAR(50),
-  `date_entry_system` date not NULL,
-  `sexo` enum('m','f'),
-  `users_observation` LONGTEXT,
-  PRIMARY KEY (`idusers`)
+  `user_cpf` VARCHAR(15) not NULL,
+  `user_rg` varchar(20),
+  `user_permission` VARCHAR(50),
+  `user_observation` LONGTEXT,
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
+DROP TABLE IF EXISTS `clients`
+CREATE TABLE `clients`(
+  `clients_id` INT NOT NULL AUTO_INCREMENT,
+  `clients_name` VARCHAR(100) NOT NULL,
+  `clients_email` VARCHAR(100) NOT NULL,
+  `clients_date_register` DATE NOT NULL,
+  `clients_date_of_birth` DATE NOT NULL,
+  `clients_phone_one` VARCHAR(15) NOT NULL,
+  `clients_phone_two` VARCHAR(15),
+  `clients_sex` ENUM('m','f') NOT NULL,
+  `clients_status` VARCHAR(45) NOT NULL,
+  `clients_cpf` VARCHAR(11) NOT NOT,
+  `clients_rg` VARCHAR(25),
+  `clients_observations` TEXT,
+  PRIMARY KEY (`clients_id`)  
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS `doctors`;
 CREATE TABLE `doctors` (
-  `iddoctors` INT NOT NULL AUTO_INCREMENT,
-  `doctors_name` varchar(50),
-  `doctors_crm` varchar(15) NOT NULL,
+  `doctors_id` INT NOT NULL AUTO_INCREMENT,
+  `doctors_name` varchar(50) NOT NULL,
   `doctors_email` varchar(100) NOT NULL,
-  `doctors_specialty` varchar(100) NOT NULL,
-  `doctors_phone` INT(15) NOT NULL,
-  `doctors_resgistration_date` DATE,
-  PRIMARY KEY (`iddoctors`)
+  `doctors_crm` varchar(15) NOT NULL,
+  `doctors_phone_one` INT(15) NOT NULL,
+  `doctors_phone_two` INT(15),
+  `doctors_date_register` DATE NOT NULL,
+  `doctors_sex` ENUM('m','f') NOT NULL,
+  `doctors_status` VARCHAR(45) NOT NULL
+  PRIMARY KEY (`doctors_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `patienst`;
+DROP TABLE IF EXISTS `specialties`;
 
-CREATE TABLE `patienst` (
-  `idpatienst` INT NOT NULL AUTO_INCREMENT,
-  `patienst_name` varchar(50) NOT NULL,
-  `patienst_phone` INT(15) NOT NULL,
-  `patienst_email` VARCHAR(100) NOT NULL,
-  `patienst_date_of_birth` DATE NOT NULL,
-  `patienst_rg` VARCHAR(20) NOT NULL,
-  `patienst_cpf` VARCHAR(15) NOT NULL,
+CREATE TABLE `specialties` (
+  `specialties_id` INT NOT NULL AUTO_INCREMENT,
+  `specialties_name` varchar(50) NOT NULL,
+  `specialties_date_of_register` DATE NOT NULL,
   `patienst_status` VARCHAR(20) NOT NULL,
-  `patienst_date_entry_system` DATE NOT NULL,
-  `patienst_sex` ENUM('m','f') NOT NULL,
-  PRIMARY KEY (`idpatienst`)
+  PRIMARY KEY (`specialties_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `vital_date`;
+DROP TABLE IF EXISTS `drugstore`;
 
-CREATE TABLE `vital_date` (
-  `idvital_date` int NOT NULL AUTO_INCREMENT,
-  `vital_date_date` DATE NOT NULL,
-  `vital_date_blood_pressure` FLOAT,
-  `vital_date_saturation` INT,
-  `vital_date_frequency_cardiac` INT,
-  `vital_date_frequency_respiratory` INT,
-  `vital_date_temperature` FLOAT,
-  `vital_date_fast_blood_glucose` INT,
-  `vital_date_fast_blood_aa` INT,
-  `vital_date_fast_blood_aj` INT,
-  `vital_date_fast_blood_ad` INT,
-  `vital_date_mic` VARCHAR(50),
-  `vital_date_evacuation` VARCHAR(5),
-  `vital_date_responsible` VARCHAR(50),
-  `vital_date_action` VARCHAR(50),
-  `vital_date_observation` LONGTEXT,
-  `idpatienst` INT NOT NULL,
-  PRIMARY KEY (`idvital_date`),
-  KEY `fkIdx_82` (`idpatienst`),
-  CONSTRAINT `FK_82` FOREIGN KEY (`idpatienst`) REFERENCES `patienst` (`idpatienst`)
+CREATE TABLE `drugstore` (
+  `drugstore_id` INT NOT NULL AUTO_INCREMENT,
+  `drugstore_name` VARCHAR(100) NOT NULL,
+  `drugstore_surname` VARCHAR(100),
+  `drugstore_phone_one` VARCHAR(50) NOT NULL,
+  `drugstore_phone_two` VARCHAR(50),
+  PRIMARY KEY (`drugstore_id`),
+  -- KEY `fkIdx_82` (`idpatienst`),
+  -- CONSTRAINT `FK_82` FOREIGN KEY (`idpatienst`) REFERENCES `patienst` (`idpatienst`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 

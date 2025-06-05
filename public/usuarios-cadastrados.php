@@ -18,11 +18,14 @@ $members = $statement->fetchAll();
 
             <!-- mapa de páginas e botão de cadastro -->
             <div class="flex justify-between items-center h-21 w-full mb-5">
-                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="" class="text-(--bg-btn-hover)">Usuários cadastrados</a></h2>
-                <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
-                    <a href="cadastro-usuarios.php" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar usuário</a>
+                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / Usuários cadastrados</h2>
+                <button id="openUserModalButton" class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300 text-(--bg-baby-powder)">
+                    <i class="fa-solid fa-plus"></i>Cadastrar usuário
                 </button>
             </div>
+
+            <!-- Modal de Cadastro de Usuário -->
+                    <?php include __DIR__."/components/modal-cadastro-usuario.php";?>
 
             <!-- dashboard usuarios cadastrados -->
             <div class="flex flex-wrap justify-start gap-1.5">
@@ -43,7 +46,4 @@ $members = $statement->fetchAll();
             </div>
 
         </section>
-    </main>
-</body>
-
-</html>
+        <?php require __DIR__ . "/templates/footer.php"; ?>

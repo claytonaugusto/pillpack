@@ -10,7 +10,7 @@
 
             <!-- mapa de páginas e botão de cadastro -->
             <div class="flex justify-between items-center h-21 w-full mb-5">
-                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Receitas próximas ao vencimento</a></h2>
+                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / Receitas próximas do vencimento</h2>
             </div>
 
             <!-- dashboard cadastro de usuários -->
@@ -89,7 +89,4 @@
             </div>
 
         </section>
-    </main>
-</body>
-
-</html>
+        <?php require __DIR__ . "/templates/footer.php"; ?>

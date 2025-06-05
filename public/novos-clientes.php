@@ -10,11 +10,11 @@
 
             <!-- mapa de páginas e botão de cadastro -->
             <div class="flex justify-between items-center h-21 w-full mb-5">
-                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / <a href="#" class="text-(--bg-btn-hover)">Novos clientes</a></h2>
-                <button class="bg-(--bg-blue-green) p-2.5 w-3xs block cursor-pointer rounded-lg hover:bg-(--bg-blue-green-hover) duration-300">
-                    <a href="" class="text-(--bg-baby-powder)"><i class="fa-solid fa-plus"></i>Cadastrar cliente</a>
-                </button>
+                <h2><a href="dashboard.php" class="text-(--bg-btn-hover)">Home</a> / Novos clientes</h2>
 
+                <?php include __DIR__."/components/btn-cadastro-de-clientes.php";?>
+                
+                
             </div>
 
             <!-- dashboard cadastro de usuários -->
@@ -143,12 +143,11 @@
                         <?php include __DIR__ . "/templates/pagination.php"; ?>
                     </div>
                 </div>
+        <!-- modal de cadastro de clientes -->
+        <?php include __DIR__."/components/modal-cadastro-clientes.php";?>
 
 
             </div>
 
         </section>
-    </main>
-</body>
-
-</html>
+        <?php require __DIR__ . "/templates/footer.php"; ?>

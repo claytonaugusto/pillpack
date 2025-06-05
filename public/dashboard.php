@@ -25,14 +25,6 @@ include __DIR__ . "/config/connection.php";
                         <h2 class="text-4xl font-bold mb-2">30</h2>
                     </div>
             </a>
-
-            <!-- <a href="clientes-totais.php">
-                <div class="flex flex-col items-center justify-center w-74 h-36 bg-(--bg-yellow-avanti) rounded-lg cursor-pointer text-(--text-prussian-blue) hover:text-(--bg-seasalt) hover:bg-(--bg-btn-hover) duration-300">
-                    <h2 class="text-xl font-bold mb-2">Clientes totais</h2>
-                    <h2 class="text-4xl font-bold mb-2">60</h2>
-                </div>
-            </a> -->
-
             <a href="clientes-uso-continuo.php">
                 <div class="flex flex-col items-center justify-center w-74 h-36 bg-(--bg-yellow-avanti) rounded-lg cursor-pointer text-(--text-prussian-blue) hover:text-(--bg-seasalt) hover:bg-(--bg-btn-hover) duration-300">
                     <h2 class="text-xl font-bold mb-2">Clientes uso contínuo</h2>
@@ -57,7 +49,4 @@ include __DIR__ . "/config/connection.php";
     </div>
 
     </section>
-    </main>
-</body>
-
-</html>
+    <?php require __DIR__."/templates/footer.php";?>
