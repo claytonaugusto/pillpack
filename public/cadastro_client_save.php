@@ -20,7 +20,12 @@ $uf = filter_input(INPUT_POST, 'uf', FILTER_SANITIZE_SPECIAL_CHARS);
 $observation = filter_input(INPUT_POST, 'observation', FILTER_SANITIZE_SPECIAL_CHARS);
 
 if ($patienst_name && $patienst_email && $patienst_date_of_register && $patienst_date_of_birth && $patienst_phone_one && $patienst_sex && $patienst_status && $patienst_cpf && $patienst_rg && $cep && $cidade && $rua && $bairro && $uf && $observation) {
-        
+
+    $sql = $pdo->prepare("SELECT * FROM patienst WHERE patienst_email = :patienst_email");
+    $sql->bindParam(':patienst_email', $patienst_email);
+    $sql->execute();
+
+    if ($sql->rowCount() === 0) {
         $sql = $pdo->prepare("INSERT INTO patienst (patienst_name, patienst_email, patienst_date_of_register, patienst_date_of_birth, patienst_phone_one, patienst_phone_two, patienst_sex, patienst_status, patienst_cpf, patienst_rg, cep, cidade, rua, bairro, complement, uf, observation) VALUES (:patienst_name, :patienst_email, :patienst_date_of_register, :patienst_date_of_birth, :patienst_phone_one, :patienst_phone_two, :patienst_sex, :patienst_status, :patienst_cpf, :patienst_rg, :cep, :cidade, :rua, :bairro, :complement, :uf, :observation)");
 
         $sql->bindParam(':patienst_name', $patienst_name);
@@ -44,8 +49,11 @@ if ($patienst_name && $patienst_email && $patienst_date_of_register && $patienst
 
         header("Location: clientes-totais.php");
         exit();
+    } else {
+        header("Location: dashboard.php");
+        exit();
     }
- else {
+} else {
     header("Location: dashboard.php");
     exit();
 }

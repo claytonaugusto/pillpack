@@ -3,16 +3,17 @@ include __DIR__ . "/templates/header.php";
 include __DIR__ . "/config/connection.php";
 
 $sql = "SELECT 
+vital_date_patient,
 vital_date_date,
 vital_date_blood_pressure,
 vital_date_saturation,
 vital_date_frequency_cardiac,
 vital_date_frequency_respiratory,
 vital_date_temperature,
-vital_date_fast_blood_glucose,
-vital_date_fast_blood_aa,
-vital_date_fast_blood_aj,
-vital_date_fast_blood_ad,
+vital_date_blood_glucose,
+vital_date_blood_aa,
+vital_date_blood_aj,
+vital_date_blood_ad,
 vital_date_mic,
 vital_date_evacuation,
 vital_date_responsible,
@@ -73,17 +74,17 @@ $members = $statement->fetchAll();
             </tr>
             <?php foreach ($members as $member) { ?>
                 <tr>
-                    <td>Fulano de Tal</td>
+                    <td><?= $member['vital_date_patient']; ?></td>
                     <td><?= $member['vital_date_date']; ?></td>
                     <td><?= $member['vital_date_blood_pressure']; ?></td>
                     <td><?= $member['vital_date_saturation']; ?></td>
                     <td><?= $member['vital_date_frequency_cardiac']; ?></td>
                     <td><?= $member['vital_date_frequency_respiratory']; ?></td>
                     <td><?= $member['vital_date_temperature']; ?></td>
-                    <td><?= $member['vital_date_fast_blood_glucose']; ?></td>
-                    <td><?= $member['vital_date_fast_blood_aa']; ?></td>
-                    <td><?= $member['vital_date_fast_blood_aj']; ?></td>
-                    <td><?= $member['vital_date_fast_blood_ad']; ?></td>
+                    <td><?= $member['vital_date_blood_glucose']; ?></td>
+                    <td><?= $member['vital_date_blood_aa']; ?></td>
+                    <td><?= $member['vital_date_blood_aj']; ?></td>
+                    <td><?= $member['vital_date_blood_ad']; ?></td>
                     <td><?= $member['vital_date_evacuation']; ?></td>
                     <td><?= $member['vital_date_mic']; ?></td>
                     <td><?= $member['vital_date_responsible']; ?></td>
